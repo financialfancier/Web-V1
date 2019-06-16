@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+        <a class="navbar-brand" href="#">
+            <img src="transparent.png" width="50" height="50" alt="">
+        </a>&emsp;&nbsp;
+        <ul class="navbar-nav">
+            <li class="mt-2 nav-item active">
+                <a class="px-0 nav-link" href="#">HOME </span></a>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active dropdown">
+                <a class="px-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BLOG</a>
+                <div class="mt-1 rounded-0 dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-light py-2 px-3" href="#">FINANCIAL LITERACY <i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                    <a class="dropdown-item text-light py-2 px-3" href="#">MARKET UPDATES <i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                    <a class="dropdown-item text-light py-2 px-3" href="#">STOCK REVIEW <i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                    <a class="dropdown-item text-light py-2 px-3" href="#">ECONOMIC EDITORIAL &nbsp; &nbsp;<i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                </div>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
+                <a class="px-0 nav-link" href="#">FORUM</a>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
+                <a class="px-0 nav-link" href="#">STOCK ALERTS</a>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
+                <a class="px-0 nav-link" href="#">REPORTS</a>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
+                <a class="px-0 nav-link" href="#">ABOUT</a>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
+                <a class="px-0 nav-link" href="#">CONTACT US</a>
+            </li>&emsp;&nbsp;
+            <form id="search-bar" class="form-inline">
+                <input id="search-field" class="form-control bg-transparent rounded-0 text-light" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button id="search-button" class="btn rounded-0" type="submit"><i id="search-icon" class="fas fa-search fa-large"></i></button>
+            </form>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Financial Fancier Blog</h1>  
+        </div>   
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">  
+           <!---     <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+            <div class="col-lg-4 col-sm-6">  
+                <img class ="img-thumbnail"src="http://i.imgur.com/qK42fUu.jpg">
+            </div>
+        </div>  -->
+
+
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+            <div class="frontside">
+            <div class="card" style="width:20rem;">
+            <img class="card-img-top img- fluid" src="http://i.imgur.com/qK42fUu.jpg" alt="card image">
+            <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is basic card with image on top, title, description and button.</p>
+            </div>
+            </div>
+            </div>
+            <div class="backside">
+            <div class="card" style="width:20rem;">
+            <div class="card-header">
+            This is a Header
+            </div>
+            <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is a card component with header and footer.</p>
+            <a href="#" class="btn btn-info btn-md">Read More</a>
+            </div>
+            <div class="card-footer">
+            This is a Footer
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>      
+    </div> 
+
+
+    <div class="col-lg-4 col-sm-6">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+        <div class="frontside">
+        <div class="card" style="width:20rem;">
+        <img class="card-img-top img- fluid" src="http://i.imgur.com/qK42fUu.jpg" alt="card image">
+        <div class="card-body">
+        <h4 class="card-title">Card Title</h4>
+        <p class="card-text">This is basic card with image on top, title, description and button.</p>
+        </div>
+        </div>
+        </div>
+        <div class="backside">
+        <div class="card" style="width:20rem;">
+        <div class="card-header">
+        This is a Header
+        </div>
+        <div class="card-body">
+        <h4 class="card-title">Card Title</h4>
+        <p class="card-text">This is a card component with header and footer.</p>
+        <a href="#" class="btn btn-info btn-md">Read More</a>
+        </div>
+        <div class="card-footer">
+        This is a Footer
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>      
+
+    </div>
+
+
+    <div class="col-lg-4 col-sm-6">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+            <div class="frontside">
+            <div class="card" style="width:20rem;">
+            <img class="card-img-top img- fluid" src="http://i.imgur.com/qK42fUu.jpg" alt="card image">
+            <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is basic card with image on top, title, description and button.</p>
+            </div>
+            </div>
+            </div>
+            <div class="backside">
+            <div class="card" style="width:20rem;">
+            <div class="card-header">
+            This is a Header
+            </div>
+            <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is a card component with header and footer.</p>
+            <a href="#" class="btn btn-info btn-md">Read More</a>
+            </div>
+            <div class="card-footer">
+            This is a Footer
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>      
+        </div>
+    </div>      
+
+    <div class="row">
+    <div class="col-lg-4 col-sm-6">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+            <div class="frontside">
+            <div class="card" style="width:20rem;">
+            <img class="card-img-top img- fluid" src="http://i.imgur.com/qK42fUu.jpg" alt="card image">
+            <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is basic card with image on top, title, description and button.</p>
+            </div>
+            </div>
+            </div>
+            <div class="backside">
+            <div class="card" style="width:20rem;">
+            <div class="card-header">
+            This is a Header
+            </div>
+            <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is a card component with header and footer.</p>
+            <a href="#" class="btn btn-info btn-md">Read More</a>
+            </div>
+            <div class="card-footer">
+            This is a Footer
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>      
+    
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                <div class="frontside">
+                <div class="card" style="width:20rem;">
+                <img class="card-img-top img- fluid" src="http://i.imgur.com/qK42fUu.jpg" alt="card image">
+                <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                </div>
+                </div>
+                </div>
+                <div class="backside">
+                <div class="card" style="width:20rem;">
+                <div class="card-header">
+                This is a Header
+                </div>
+                <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">This is a card component with header and footer.</p>
+                <a href="#" class="btn btn-info btn-md">Read More</a>
+                </div>
+                <div class="card-footer">
+                This is a Footer
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>      
+        
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                    <div class="frontside">
+                    <div class="card" style="width:20rem;">
+                    <img class="card-img-top img- fluid" src="http://i.imgur.com/qK42fUu.jpg" alt="card image">
+                    <div class="card-body">
+                    <h4 class="card-title">Card Title</h4>
+                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="backside">
+                    <div class="card" style="width:20rem;">
+                    <div class="card-header">
+                    This is a Header
+                    </div>
+                    <div class="card-body">
+                    <h4 class="card-title">Card Title</h4>
+                    <p class="card-text">This is a card component with header and footer.</p>
+                    <a href="#" class="btn btn-info btn-md">Read More</a>
+                    </div>
+                    <div class="card-footer">
+                    This is a Footer
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>      
+            
+                </div>
+
+
+    </div>
+       
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
