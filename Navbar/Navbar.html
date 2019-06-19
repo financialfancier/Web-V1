@@ -27,7 +27,8 @@
             border-color: white;
         }
 
-        button.btn:focus, button.btn:active {
+        button.btn:focus,
+        button.btn:active {
             box-shadow: none !important;
         }
 
@@ -35,14 +36,14 @@
             background-color: black;
             color: white;
             border-top: 2px solid #38B64A;
-            width:max-content;
+            width: max-content;
         }
 
-        .dropdown-menu > a:hover {
+        .dropdown-menu>a:hover {
             background-color: rgba(0, 0, 0, 0.931);
         }
 
-        a.dropdown-item:hover > i {
+        a.dropdown-item:hover>i {
             color: #38B64A;
         }
 
@@ -51,11 +52,8 @@
             margin-top: 0;
         }
 
-        .dropdown-toggle::after {
-            display: none;
-        }
-
-        .nav-link, .nav-item {
+        .nav-link,
+        .nav-item {
             padding: 0px;
         }
 
@@ -71,12 +69,42 @@
             width: 100%;
         }
 
-        i{
+        i {
             vertical-align: baseline;
         }
 
         ::placeholder {
             color: white !important;
+        }
+
+        input#search-field {
+            border: none ; 
+            width: 0px ; 
+            padding: 0px ;
+            transition: width 0.4s !important;
+        }
+
+        button#search-button {
+            background-color: transparent;
+        }
+
+        i#search-icon {
+            color: white;
+        }
+
+        form#search-bar:hover > input#search-field {
+            width: 200px !important;
+            border: solid 1px white ;
+            padding: 10px ;
+            transition-duration: 0.4s ;
+        }
+
+        form#search-bar:hover > button#search-button {
+            background-color: white ;
+        }
+
+        form#search-bar:hover > button#search-button > i#search-icon {
+            color: black ;
         }
     </style>
 </head>
@@ -85,40 +113,44 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
         <a class="navbar-brand" href="#">
             <img src="transparent.png" width="50" height="50" alt="">
-        </a>&emsp;
+        </a>&emsp;&nbsp;
         <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="mt-2 nav-item active">
                 <a class="px-0 nav-link" href="#">HOME </span></a>
-            </li>&emsp;&emsp;
-            <li class="nav-item active dropdown">
-                <a class="px-0 nav-link" href="#">BLOG</a>
-                <div class="mt-1 rounded-0 dropdown-menu">
-                    <a class="dropdown-item text-light py-2 px-3" href="#">FINANCIAL LITERACY <i class="float-right mt-1 fas fa-chevron-right"></i></a>
-                    <a class="dropdown-item text-light py-2 px-3" href="#">MARKET UPDATES <i class="float-right mt-1 fas fa-chevron-right"></i></a>
-                    <a class="dropdown-item text-light py-2 px-3" href="#">STOCK REVIEW <i class="float-right mt-1 fas fa-chevron-right"></i></a>
-                    <a class="dropdown-item text-light py-2 px-3" href="#">ECONOMIC EDITORIAL &nbsp; &nbsp;<i class="float-right mt-1 fas fa-chevron-right"></i></a>
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active dropdown">
+                <a class="px-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BLOG</a>
+                <div class="mt-1 rounded-0 dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-light py-2 px-3" href="#">FINANCIAL LITERACY <i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                    <a class="dropdown-item text-light py-2 px-3" href="#">MARKET UPDATES <i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                    <a class="dropdown-item text-light py-2 px-3" href="#">STOCK REVIEW <i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
+                    <a class="dropdown-item text-light py-2 px-3" href="#">ECONOMIC EDITORIAL &nbsp; &nbsp;<i
+                            class="float-right mt-1 fas fa-chevron-right"></i></a>
                 </div>
-            </li>&emsp;&emsp;
-            <li class="nav-item active">
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
                 <a class="px-0 nav-link" href="#">FORUM</a>
-            </li>&emsp;&emsp;
-            <li class="nav-item active">
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
                 <a class="px-0 nav-link" href="#">STOCK ALERTS</a>
-            </li>&emsp;&emsp;
-            <li class="nav-item active">
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
                 <a class="px-0 nav-link" href="#">REPORTS</a>
-            </li>&emsp;&emsp;
-            <li class="nav-item active">
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
                 <a class="px-0 nav-link" href="#">ABOUT</a>
-            </li>&emsp;&emsp;
-            <li class="nav-item active">
+            </li>&emsp;&nbsp;
+            <li class="mt-2 nav-item active">
                 <a class="px-0 nav-link" href="#">CONTACT US</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <form class="form-inline">
-                <input class="form-control bg-transparent rounded-0 text-light" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light rounded-0" type="submit"><i class="fas fa-search"></i></button>
+            </li>&emsp;&nbsp;
+            <form id="search-bar" class="form-inline">
+                <input id="search-field" class="form-control bg-transparent rounded-0 text-light" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button id="search-button" class="btn rounded-0" type="submit"><i id="search-icon" class="fas fa-search fa-large"></i></button>
             </form>
         </ul>
     </nav>

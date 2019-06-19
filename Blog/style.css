@@ -1,0 +1,187 @@
+        body { 
+        padding-top: 70px; 
+        }
+        .jumbotron {
+       color: #2c3e50;
+       background: rgb(141, 197, 149);
+       padding: 1rem 1rem;
+ 
+         }   
+
+        body {
+            background-image: url('business.jpg');
+            background-attachment: fixed;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-color: white;
+        }
+
+        input.form-control:focus {
+            -webkit-appearance: none;
+            box-shadow: none;
+            border-color: white;
+        }
+
+        button.btn:focus,
+        button.btn:active {
+            box-shadow: none !important;
+        }
+
+        .dropdown-menu {
+            background-color: black;
+            color: white;
+            border-top: 2px solid #38B64A;
+            width: max-content;
+        }
+
+        .dropdown-menu>a:hover {
+            background-color: rgba(0, 0, 0, 0.931);
+        }
+
+        a.dropdown-item:hover>i {
+            color: #38B64A;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .nav-link,
+        .nav-item {
+            padding: 0px;
+        }
+
+        .nav-item::after {
+            content: "";
+            display: block;
+            width: 0%;
+            border-bottom: 2px solid #38B64A;
+            transition: .5s;
+        }
+
+        .nav-item:hover::after {
+            width: 100%;
+        }
+
+        i {
+            vertical-align: baseline;
+        }
+
+        ::placeholder {
+            color: white !important;
+        }
+
+        input#search-field {
+            border: none ; 
+            width: 0px ; 
+            padding: 0px ;
+            transition: width 0.4s !important;
+        }
+
+        button#search-button {
+            background-color: transparent;
+        }
+
+        i#search-icon {
+            color: white;
+        }
+
+        form#search-bar:hover > input#search-field {
+            width: 200px !important;
+            border: solid 1px white ;
+            padding: 10px ;
+            transition-duration: 0.4s ;
+        }
+
+        form#search-bar:hover > button#search-button {
+            background-color: white ;
+        }
+
+        form#search-bar:hover > button#search-button > i#search-icon {
+            color: black ;
+        }
+
+        .col-sm-6 {
+
+            padding: .5rem;
+        }
+        
+
+        .image-flip:hover .backside, .image-flip.hover .backside {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            }
+             
+            .image-flip:hover .frontside, .image-flip.hover .frontside {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            }
+             
+            .image-flip {
+            margin-bottom:200px;
+            width: 300px;
+            height: 250px;
+            }
+             
+            .mainflip {
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -moz-transition: 1s;
+            -moz-transform: perspective(1000px);
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+            }
+             
+            .frontside, .backside {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1s;
+            -o-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 0;
+            left: 0;
+            }
+             
+            .frontside {
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+            }
+             
+            .backside {
+            background: white;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            }
+             
+            .card, .card-img-top {
+            border-radius: 0;
+            }
+
+            .row{
+                margin-bottom: -100px;
+            }
