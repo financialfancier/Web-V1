@@ -1,0 +1,316 @@
+@charset "utf-8";
+	.NormalCharacterStyle5
+{
+	font-family : Acumin Variable Concept;
+	font-size : 26px;
+	line-height : 20px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+	text-align: center;
+}
+.NormalCharacterStyle4
+{
+	font-family : Acumin Variable Concept;
+	font-size : 26px;
+	line-height : 20px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle2
+{
+	font-family : Acumin Variable Concept;
+	font-size : 26px;
+	line-height : 20px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle3
+{
+	font-family : Acumin Variable Concept;
+	font-size : 26px;
+	line-height : 20px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle1
+{
+	font-family : Acumin Variable Concept;
+	font-size : 26px;
+	line-height : 20px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle
+{
+	font-family : Acumin Variable Concept;
+	font-size : 24px;
+	line-height : 20px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+
+.image6
+{
+	background-image : url(image6.png);
+	background-repeat : no-repeat;
+	opacity : 0.69;
+	position : absolute ;
+	left : 1000px;
+	top : 10px;
+	width : 115px;
+	height : 256px;
+	filter: alpha(opacity=69) progid:DXImageTransform.Microsoft.Alpha(opacity=69) ;
+}
+
+
+.image7
+{
+	background-image : url(image7.png);
+	background-repeat : no-repeat;
+	opacity : 0.69;
+	position : absolute ;
+	left : 120px;
+	top : 30px;
+	width : 428px;
+	height : 237px;
+	filter: alpha(opacity=69) progid:DXImageTransform.Microsoft.Alpha(opacity=69) ;
+}
+.st0
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 614px;
+	top : 271px;
+	width : 23px;
+	height : 25px;
+}
+
+
+.st1
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 602px;
+	top : 272px;
+	width : 7px;
+	height : 24px;
+}
+.image3
+{
+	background-image : url(image3.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 850px;
+	top : 55px;
+	width : 154px;
+	height : 184px;
+}
+.image5
+{
+	background-image : url(image5.png);
+	background-repeat : no-repeat;
+	opacity : 0.69;
+	position : absolute ;
+	left : 150px;
+	top : 550px;
+	width : 136px;
+	height : 245px;
+	filter: alpha(opacity=69) progid:DXImageTransform.Microsoft.Alpha(opacity=69) ;
+}
+.image4
+{
+	background-image : url(image4.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 170px;
+	top : 180px;
+	width : 161px;
+	height : 163px;
+}
+.image2
+{
+	background-image : url(image2.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 260px;
+	top : 680px;
+	width : 186px;
+	height : 153px;
+}
+.st2
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 338px;
+	top : 257px;
+	width : 20px;
+	height : 43px;
+}
+.image16
+{
+	background-image : url(image16.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 290px;
+	top : 649px;
+	width : 583px;
+	height : 79px;
+}
+.image13
+{
+	background-image : url(image13.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 290px;
+	top : 1022px;
+	width : 303px;
+	height : 83px;
+}
+.image8
+{
+	background-image : url(image8.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 440px;
+	top : 70px;
+	width : 108px;
+	height : 108px;
+}
+
+.image9
+{
+	background-image : url(image9.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 640px;
+	top : 70px;
+	width : 108px;
+	height : 108px;
+}
+
+.image10
+{
+	background-image : url(image10.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 740px;
+	top : 70px;
+	width : 108px;
+	height : 108px;
+}
+
+.image11
+{
+	background-image : url(image11.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 540px;
+	top : 70px;
+	width : 108px;
+	height : 108px;
+}
+
+.image17
+{
+	background-image : url(image17.png);
+	background-repeat : no-repeat;
+	opacity : 0.69;
+	position : absolute ;
+	left : 680px;
+	top : 310px;
+	width : 281px;
+	height : 245px;
+	filter: alpha(opacity=69) progid:DXImageTransform.Microsoft.Alpha(opacity=69) ;
+}
+
+.image15
+{
+	background-image : url(image15.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 290px;
+	top : 721px;
+	width : 583px;
+	height : 80px;
+}
+.st3
+{
+	background : #FFFFFF;
+	background : rgba(255, 255, 255, 1);
+	position : absolute ;
+	left : 602px;
+	top : 260px;
+	width : 9px;
+	height : 9px;
+}
+.image12
+{
+	background-image : url(image12.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 290px;
+	top : 864px;
+	width : 588px;
+	height : 154px;
+}
+.image14
+{
+	background-image : url(image14.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 290px;
+	top : 792px;
+	width : 583px;
+	height : 80px;
+}
+.image1
+{
+	background-image : url(image1.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 810px;
+	top : 270px;
+	width : 84px;
+	height : 77px;
+}
+
+.image
+{
+	background-image : url(image.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 797px;
+	top : 600px;
+	width : 98px;
+	height : 114px;
+}
+
+.h3{
+	line-height: 1;
+	margin-bottom: 6.5rem;
+}
+
+
+p{
+	margin-top: 20px;
+}
+
+.form-control{
+	width: 50%;
+	float: right;
+	margin-right: 340px;
+}
+
+.container{
+	padding-left: 220px;
+	padding-top: 200px;
+}
+
+button{
+	margin-right: 10px;
+	margin-top: 30px;
+	margin-left: 115px;
+}
