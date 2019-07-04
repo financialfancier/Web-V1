@@ -25,7 +25,7 @@ body{
 }
 
 .container{
-  padding: 1em 0;
+  padding: 1rem 0;
   float: left;
   width: 50%;
 }
@@ -50,7 +50,7 @@ body{
 
 .content {
   position: relative;
-  width: 90%;
+  width: 80%;
   max-width: 400px;
   margin: auto;
   overflow: hidden;
@@ -137,14 +137,10 @@ body{
     font-weight: bold;
     padding: 2rem ; 
    
-    margin-right: 1.5rem;
+    margin-left: 2rem;
     font-size: 35px;
     text-align: center;
-    width: 100%;
-}
-
-.container-fluid{
-    width: 100%;
+    width: 95%;
 }
 
 .container{
@@ -157,32 +153,39 @@ body{
 }
 
 #first{
-  margin-left: 15px;
+  margin-left: 50px;
   margin-top: 25px;
 }
 
 #second{
-  margin-left: 22px;
+  margin-left: 45px;
   margin-top: 25px;
+  margin-right: 20px;
 }
 
 #third{
-  margin-left: 27px;
+  margin-left: 35px;
   margin-top: 30px;
 }
 
 #fourth{
-  margin-left: 15px;
+  margin-left: 50px;
   margin-top: 10px;
   
 }
 
 #fifth{
-  margin-left: 22px; 
+  margin-left: 45px; 
   margin-top: 10px;
 }
 
 #sixth{
-  margin-left: 25px;
+  margin-left: 35px;
   margin-top: 10px;
+}
+
+.carousel{
+  width: 100%;
+  padding-left: 3rem; 
+  padding-right: 3rem;
 }
