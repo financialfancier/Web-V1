@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lusitana|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="logo.png">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: lightgrey;
+            color: white;
+        }
+
+        .panels {
+            display: inline-block;
+            vertical-align: middle;
+            background-size: cover;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding-top: 60px;
+            padding-bottom: 120px;
+        }
+
+         .panels.panel-x {
+            background-color:#343a40;
+        }
+
+        .panels.panel-y {
+            background-color:black;
+        }
+
+        div.panels.panel-x > span.arrow {
+            border: 30px solid #fff;
+            border-bottom: none;
+            border-color: transparent black transparent black;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        div.panels.panel-x > span.arrow::before,
+        div.panels.panel-x > span.arrow::after {
+            content: "";
+            position: absolute;
+            width: 5000px;
+            bottom: 0;
+            height: 30px;
+            background: black;
+            background-color: black;
+        }
+
+        div.panels.panel-y > span.arrow {
+            border: 30px solid #fff;
+            border-bottom: none;
+            border-color: transparent #343a40 transparent #343a40;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        div.panels.panel-y > span.arrow::before,
+        div.panels.panel-y > span.arrow::after {
+            content: "";
+            position: absolute;
+            width: 5000px;
+            bottom: 0;
+            height: 30px;
+            background: #343a40;
+            background-color: #343a40;
+        }
+
+        div.panels.panel-x > span.arrow::before,
+        div.panels.panel-y > span.arrow::before{
+            right: 30px;
+        }
+
+        div.panels.panel-x > span.arrow::after,
+        div.panels.panel-y > span.arrow::after{
+            left: 30px;
+        }
+
+        p {
+            font-family: 'Lusitana', serif;
+            font-size: 22px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div style="background-image: linear-gradient(#232d46, black); text-align: center;" class="pt-5 pb-4 px-1">
+            <h1 style="font-weight: 700; font-size: 53px;">We Are Your Personal Finance Manager</h1>
+            <p style="color: #747d8c" class="m-0">- An investment in knowledge pays the best interest -</p>
+        </div>
+        <div style="background-color:black; padding-bottom: 20px;">
+            <div>
+                <div class="container" style="text-align: center;">
+                    <div class="row">
+                        <div class="col-12"
+                            style="background-image: url('transparent-logo.png'); height: auto; background-size: contain; background-position: center; background-repeat: no-repeat;">
+                            <p class="m-0 px-sm-5 px-1 py-4"
+                                style="font-size: 25px; text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);">
+                                Financial Fancier started with the aim to make fellow citizens financially aware, on how
+                                to
+                                invest
+                                their
+                                hard earned money in order to create a good corpus, in the long run and achieve their
+                                financial
+                                goals.
+                                Citizens of all income classes should be benefited from the various methods of
+                                investments
+                                available
+                                and
+                                earn more interest rate on their money in comparison to banks. We owe huge thanks to our
+                                community
+                                for
+                                joining us on this awesome journey and we hope that you will continue to be a part of
+                                our
+                                journey.
+                                A team of like minded ,young entrepreneurs from all over India founded this
+                                startup. Presently,our
+                                team
+                                comprises of fast learners with professionalism as the common language so as to fulfill
+                                the
+                                dream to
+                                empower every citizen in the country to utilize monetary resources effectively.
+                            </p>
+                            <!-- <img id="scroll-button" src="arrow-down.svg" alt="" width="110" height="70"
+                                style="cursor: pointer"> -->
+                            <i id="scroll-button" style="cursor: pointer; text-shadow: 0px 0px 12px #4FCFFF"
+                                class="fas fa-chevron-down fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <div class="panels panel-x" style="padding-top: 90px;">
+            <div class="container" style="display: flex">
+                <img class="d-none d-md-block" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    width="350" alt="">
+                <div class="px-5 py-2">
+                    <h2 style="font-weight: 700;">Our founding</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit praesentium
+                        repellendus,
+                        ipsa libero totam sunt quasi doloremque quidem autem iure dicta, commodi rerum, nesciunt
+                        voluptatem
+                        neque unde voluptatibus aliquam.</p>
+                </div>
+            </div>
+            <span class="arrow" style="left:48%;"></span>
+        </div>
+        <div class="panels panel-y">
+            <div class="container" style="display: flex">
+                <div class="px-5 py-2">
+                    <h2 style="font-weight: 700;">Early growth & funding</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit praesentium
+                        repellendus,
+                        ipsa libero totam sunt quasi doloremque quidem autem iure dicta, commodi rerum, nesciunt
+                        voluptatem
+                        neque unde voluptatibus aliquam.</p>
+                </div>
+                <img class="d-none d-md-block" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    width="350" alt="">
+            </div>
+            <span class="arrow" style="left:48%;"></span>
+        </div>
+        <div class="panels panel-x">
+            <div class="container" style="display: flex">
+                <img class="d-none d-md-block" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    width="350" alt="">
+                <div class="px-5 py-2">
+                    <h2 style="font-weight: 700;">A new leaf</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit praesentium
+                        repellendus,
+                        ipsa libero totam sunt quasi doloremque quidem autem iure dicta, commodi rerum, nesciunt
+                        voluptatem
+                        neque unde voluptatibus aliquam.</p>
+                </div>
+            </div>
+            <span class="arrow" style="left:48%;"></span>
+        </div>
+        <div class="panels panel-y" style="padding-bottom: 90px;">
+            <div class="container" style="display: flex">
+                <div class="px-5 py-2">
+                    <h2 style="font-weight: 700;">To Infinity and Beyond!</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit praesentium
+                        repellendus,
+                        ipsa libero totam sunt quasi doloremque quidem autem iure dicta, commodi rerum, nesciunt
+                        voluptatem
+                        neque unde voluptatibus aliquam.</p>
+                </div>
+                <img class="d-none d-md-block" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    width="350" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="bottom" class="text-dark">
+        <div class="container p-5 mt-5" style="background-color: rgb(206, 204, 204)">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <center>
+                        <h1>Leadership</h1>
+                    </center>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12 p-sm-4 pt-4">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Shashikant Mony</h4>
+                        <h5 class="text-muted">CTO</h5>
+                        <p class="pt-3">
+                            Shashikant Mony, is presently heading all our technical operations.Having a keen interest in
+                            Finance
+                            and also to further develop further his technical skills,he joined us in the very . Apart
+                            from
+                            his
+                            technical skills he has really good in management and is also contributing significantly in
+                            our
+                            other departments.
+                        </p>
+                        <a href="#"><i class="fa-2x fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 mr-1 fas fa-envelope"></i></a>
+                    </center>
+                </div>
+                <div class="col-md-4 col-12 p-sm-4 pt-4">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Shubham Saurav</h4>
+                        <h5 class="text-muted">CEO, FOUNDER</h5>
+                        <p class="pt-3">
+                            Having keen interest in financial worlds from early stages. He founded Financialfancier in
+                            2018
+                            with
+                            two other people and taking a plunge with him. He moves with a single aim – to make the
+                            investment
+                            in various options available for all the income classes.
+                        </p>
+                        <a href="#"><i class="fa-2x fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 mr-1 fas fa-envelope"></i></a>
+                    </center>
+                </div>
+                <div class="col-md-4 col-12 p-sm-4 pt-4">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Ayush Raj</h4>
+                        <h5 class="text-muted">CO-FOUNDER</h5>
+                        <p class="pt-3">
+                            Ayush Raj is our outreach coordinator.He is currently pursuing B.Tech in Electronics and
+                            Instrumentation. Being a hard worker he is always ready to take new challenges and come up
+                            with
+                            something great.
+                        </p>
+                        <a href="#"><i class="fa-2x fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-2x ml-xl-4 ml-lg-3 ml-md-2 ml-sm-4 ml-4 mr-1 fas fa-envelope"></i></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="container p-5 my-5" style="background-color: rgb(206, 204, 204)">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <center>
+                        <h1>Team</h1>
+                    </center>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Anishka Shukla</h4>
+                        <h6 class="text-muted">SOFTWARE ENGINEER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Srikant Sahoo</h4>
+                        <h6 class="text-muted">UI/UX DESIGNER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Neelanjan Manna</h4>
+                        <h6 class="text-muted">SOFTWARE ENGINEER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Pradatta Nigamanshu</h4>
+                        <h6 class="text-muted">GRAPHIC DESIGNER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Srijib Bose</h4>
+                        <h6 class="text-muted">FRONT-END ENGINEER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Priya Kishore</h4>
+                        <h6 class="text-muted">SOFTWARE ENGINEER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Prachi Prafull</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('scroll-button').addEventListener('click', function () {
+            window.scrollBy(0, document.getElementById('header').offsetHeight);
+        });
+    </script>
+</body>
+
+</html>
