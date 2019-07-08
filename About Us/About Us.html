@@ -108,6 +108,72 @@
         ::-webkit-scrollbar {
             display: none;
         }
+
+        .chevron {
+            position: absolute;
+            width: 28px;
+            height: 8px;
+            opacity: 0;
+            transform: scale3d(0.5, 0.5, 0.5);
+            animation: move 3s ease-out infinite;
+        }
+
+        .chevron:first-child {
+            animation: move 3s ease-out 1s infinite;
+        }
+
+        .chevron:nth-child(2) {
+            animation: move 3s ease-out 2s infinite;
+        }
+
+        .chevron:before,
+        .chevron:after {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 51%;
+            background: #fff;
+        }
+
+        .chevron:before {
+            left: 0;
+            transform: skew(0deg, 30deg);
+        }
+
+        .chevron:after {
+            right: 0;
+            width: 50%;
+            transform: skew(0deg, -30deg);
+        }
+
+        @keyframes move {
+            25% {
+                opacity: 1;
+
+            }
+
+            33% {
+                opacity: 1;
+                transform: translateY(30px);
+            }
+
+            67% {
+                opacity: 1;
+                transform: translateY(40px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+            }
+        }
+
+        @keyframes pulse {
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -123,7 +189,7 @@
                     <div class="row">
                         <div class="col-12"
                             style="background-image: url('transparent-logo.png'); height: auto; background-size: contain; background-position: center; background-repeat: no-repeat;">
-                            <p class="m-0 px-sm-5 px-1 py-4"
+                            <p class="m-0 px-sm-5 px-1 py-3"
                                 style="font-size: 25px; text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);">
                                 Financial Fancier started with the aim to make fellow citizens financially aware, on how
                                 to
@@ -152,8 +218,14 @@
                             </p>
                             <!-- <img id="scroll-button" src="arrow-down.svg" alt="" width="110" height="70"
                                 style="cursor: pointer"> -->
-                            <i id="scroll-button" style="cursor: pointer; text-shadow: 0px 0px 12px #4FCFFF"
-                                class="fas fa-chevron-down fa-3x"></i>
+                            <!--  <i id="scroll-button" style="cursor: pointer; text-shadow: 0px 0px 12px #4FCFFF"
+                                class="fas fa-chevron-down fa-3x"></i> -->
+                            <div id="scroll-button" class="mb-5"
+                                style="display: flex; justify-content:center; align-items:center; cursor: pointer;">
+                                <div class="chevron"></div>
+                                <div class="chevron"></div>
+                                <div class="chevron"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +303,7 @@
                 <div class="col-12">
                     <br>
                     <center>
-                        <h1>Leadership</h1>
+                        <h1>LEADERSHIP</h1>
                     </center>
                     <br>
                 </div>
@@ -243,15 +315,12 @@
                         <h4>Shashikant Mony</h4>
                         <h5 class="text-muted">CTO</h5>
                         <p class="pt-3">
-                            Shashikant Mony, is presently heading all our technical operations. Having a keen interest
-                            in
+                            Shashikant Mony, is presently heading all our technical operations.Having a keen interest in
                             Finance
-                            and also to further develop his technical skills, he joined us in the very early stage of
-                            development. Apart
+                            and also to further develop further his technical skills,he joined us in the very . Apart
                             from
                             his
-                            technical skills he has really good management skills and is also contributing significantly
-                            in
+                            technical skills he has really good in management and is also contributing significantly in
                             our
                             other departments.
                         </p>
@@ -307,9 +376,16 @@
                 <div class="col-12">
                     <br>
                     <center>
-                        <h1>Team</h1>
+                        <h1>TEAM</h1>
                     </center>
                     <br>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <center>
+                        <h2>Tech Team</h2>
+                    </center>
                 </div>
             </div>
             <div class="row">
@@ -337,13 +413,6 @@
                 <div class="team-member mx-auto px-3 pt-5">
                     <center>
                         <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
-                        <h4>Pradatta Nigamanshu</h4>
-                        <h6 class="text-muted">GRAPHIC DESIGNER</h6>
-                    </center>
-                </div>
-                <div class="team-member mx-auto px-3 pt-5">
-                    <center>
-                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
                         <h4>Srijib Bose</h4>
                         <h6 class="text-muted">FRONT-END ENGINEER</h6>
                     </center>
@@ -355,6 +424,15 @@
                         <h6 class="text-muted">SOFTWARE ENGINEER</h6>
                     </center>
                 </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <center>
+                        <h2>Content Team</h2>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
                 <div class="team-member mx-auto px-3 pt-5">
                     <center>
                         <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
@@ -362,8 +440,104 @@
                         <h6 class="text-muted">CONTENT WRITER</h6>
                     </center>
                 </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Prachi Singh</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Hritul Agarwal</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Anwesha Prusty</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Nibedita Subudhi</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Aunkita Mandal</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Kaif Ahmed</h4>
+                        <h6 class="text-muted">CONTENT WRITER</h6>
+                    </center>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <center>
+                        <h2>Graphics Team</h2>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Pratik Dash</h4>
+                        <h6 class="text-muted">GRAPHIC DESIGNER</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Pradatta Nigamanshu Behera</h4>
+                        <h6 class="text-muted">GRAPHIC DESIGNER</h6>
+                    </center>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <center>
+                        <h2>Outreach Team</h2>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Diwakar Sahu</h4>
+                        <h6 class="text-muted">OUTREACH</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Akhileshwar Anand</h4>
+                        <h6 class="text-muted">OUTREACH</h6>
+                    </center>
+                </div>
+                <div class="team-member mx-auto px-3 pt-5">
+                    <center>
+                        <img src="user-icon.png" class="img-fluid rounded-circle" alt="" width="95">
+                        <h4>Supratik Sarangi</h4>
+                        <h6 class="text-muted">OUTREACH</h6>
+                    </center>
+                </div>
             </div>
         </div>
+    </div>
     </div>
     <script>
         document.getElementById('scroll-button').addEventListener('click', function () {
