@@ -219,8 +219,8 @@
 	background-repeat : no-repeat;
 	opacity : 0.69;
 	position : absolute ;
-	left : 680px;
-	top : 310px;
+	left : 740px;
+	top : 620px;
 	width : 281px;
 	height : 245px;
 	filter: alpha(opacity=69) progid:DXImageTransform.Microsoft.Alpha(opacity=69) ;
@@ -313,4 +313,55 @@ button{
 	margin-right: 10px;
 	margin-top: 30px;
 	margin-left: 115px;
+}
+
+#img{
+	left: 900px;
+	top: 400px;
+	
+}
+
+.image4:hover
+{
+	transform: scale(1.5); 
+}
+
+.image:hover
+{
+	transform: scale(1.5); 
+}
+
+.image1:hover
+{
+	transform: scale(1.5); 
+}
+
+.image2:hover
+{
+	transform: scale(1.5); 
+}
+
+.image3:hover
+{
+	transform: scale(1.5); 
+}
+
+.image5:hover
+{
+	transform: scale(1.5); 
+}
+
+.image6:hover
+{
+	transform: scale(1.5); 
+}
+
+.image7:hover
+{
+	transform: scale(1.5); 
+}
+
+.image17:hover
+{
+	transform: scale(1.5); 
 }
