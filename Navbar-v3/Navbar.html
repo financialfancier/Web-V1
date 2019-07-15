@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('business.jpg');
+            /* background-attachment: fixed; */
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-color: white;
+        }
+
+        input.form-control:focus {
+            -webkit-appearance: none;
+            box-shadow: none;
+            border-color: white;
+        }
+
+        button.btn:focus,
+        button.btn:active {
+            box-shadow: none !important;
+        }
+
+        .dropdown-menu {
+            background-color: black;
+            color: white;
+            border-top: 2px solid #38B64A;
+            width: max-content;
+        }
+
+        .dropdown-menu>a:hover {
+            background-color: rgba(0, 0, 0, 0.931);
+        }
+
+        a.dropdown-item:hover>i {
+            color: #38B64A;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .nav-link,
+        .nav-item {
+            padding: 0px;
+            width: max-content;
+        }
+
+        .nav-item.active::after {
+            content: "";
+            display: block;
+            width: 0%;
+            border-bottom: 2px solid #38B64A;
+            transition: .5s;
+        }
+
+        .nav-item.active:hover::after {
+            width: 100%;
+        }
+
+        i {
+            vertical-align: baseline;
+        }
+
+        ::placeholder {
+            color: white !important;
+        }
+
+        input#search-field {
+            border: none;
+            width: 0px;
+            padding: 0px;
+            transition: width 0.4s !important;
+            background: transparent;
+        }
+
+        button#search-button {
+            background-color: transparent;
+        }
+
+        i#search-icon {
+            color: white;
+        }
+
+        form#search-bar:hover>input#search-field {
+            width: 300px !important;
+            border: solid 1px white;
+            padding: 10px;
+            transition-duration: 0.4s;
+        }
+
+        form#search-bar:hover>button#search-button {
+            background-color: white;
+        }
+
+        form#search-bar:hover>button#search-button>i#search-icon {
+            color: black;
+        }
+
+        form.scrolled#search-bar>#search-field{
+            width: 300px;
+            padding: 10px;
+            transition-duration: 0.4s;
+            background-color: rgba(128, 128, 128, 0.555);
+        }
+
+        form.scrolled:hover#search-bar>#search-field{
+            width: 300px !important;
+            padding: 10px;
+            transition-duration: 0.4s;
+            background: transparent;
+        }
+
+        form.scrolled#search-bar:hover>button#search-button {
+            background-color: white;
+        }
+
+        form.scrolled#search-bar:hover>button#search-button>i#search-icon {
+            color: black;
+        }
+
+        .navbar {
+            transition: background-color 1s ease 0s;
+        }
+
+        .navbar.solid {
+            background-color: black;
+            transition: background-color 0.4s ease 0s;
+        }
+
+        /* .navbar.solid .navbar-brand {
+            color: #c57ed3;
+            transition: color 1s ease 0s;
+        }
+
+        .navbar.solid .navbar-nav>li>a {
+            color: #c57ed3;
+            transition: color 1s ease 0s;
+        } */
+
+        .nav-item.scrolled:hover > a.nav-link {
+            
+        }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="transparent.png" width="50" height="50" alt="">
+    </a>&emsp;&nbsp;
+    <ul class="navbar-nav">
+        <li class="mt-2 nav-item active">
+            <a class="px-0 nav-link" href="#">HOME </span></a>
+        </li>&emsp;&nbsp;
+        <li class="mt-2 nav-item active dropdown">
+            <a class="px-0 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">BLOG</a>
+            <div class="mt-1 rounded-0 dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-light py-2 px-3" href="#">FINANCIAL LITERACY <i
+                        class="float-right mt-1 fas fa-chevron-right"></i></a>
+                <a class="dropdown-item text-light py-2 px-3" href="#">MARKET UPDATES <i
+                        class="float-right mt-1 fas fa-chevron-right"></i></a>
+                <a class="dropdown-item text-light py-2 px-3" href="#">STOCK REVIEW <i
+                        class="float-right mt-1 fas fa-chevron-right"></i></a>
+                <a class="dropdown-item text-light py-2 px-3" href="#">ECONOMIC EDITORIAL &nbsp; &nbsp;<i
+                        class="float-right mt-1 fas fa-chevron-right"></i></a>
+            </div>
+        </li>&emsp;&nbsp;
+        <li class="mt-2 nav-item active">
+            <a class="px-0 nav-link" href="#">FORUM</a>
+        </li>&emsp;&nbsp;
+        <li class="mt-2 nav-item active">
+            <a class="px-0 nav-link" href="#">STOCK ALERTS</a>
+        </li>&emsp;&nbsp;
+        <li class="mt-2 nav-item active">
+            <a class="px-0 nav-link" href="#">REPORTS</a>
+        </li>&emsp;&nbsp;
+        <li class="mt-2 nav-item active">
+            <a class="px-0 nav-link" href="#">ABOUT</a>
+        </li>&emsp;&nbsp;
+        <li class="mt-2 nav-item active">
+            <a class="px-0 nav-link" href="#">CONTACT US</a>
+        </li>&emsp;&nbsp;
+        <img src="image2.svg" alt="" id="background-arrow" style="display: none;">
+        <form id="search-bar" class="form-inline">
+            <input id="search-field" class="form-control rounded-0 text-light" type="search"
+                placeholder="Search" aria-label="Search">
+            <button id="search-button" class="btn rounded-0" type="submit"><i id="search-icon"
+                    class="fas fa-search fa-large"></i></button>
+        </form>
+    </ul>
+</nav>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="height: 700px">
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // checks if window is scrolled more than 50px, adds/removes solid class
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('solid');
+                    $('#background-arrow').show();
+                    $('.nav-item').addClass('pt-4 px-2 scrolled');
+                    $('#search-bar').addClass('nav-item');
+                    $('#search-bar').css({"position": "absolute", "right": "0"});
+                } else {
+                    $('.navbar').removeClass('solid');
+                    $('#background-arrow').hide();
+                    $('.nav-item').removeClass('pt-4 px-2 scrolled');
+                    $('#search-bar').removeClass('nav-item');
+                    $('#search-bar').css({"position": "relative", "right": "inherit"})
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
