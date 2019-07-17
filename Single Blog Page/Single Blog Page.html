@@ -135,13 +135,13 @@
 </head>
 
 <body>
-    <div id="header" class="image-header py-0">
+    <!-- <div id="header" class="image-header py-0">
         <div class="container-fluid 0" style="height: inherit;">
             <h4 class="text-white p-4" style="font-family: 'Raleway', sans-serif;">18 JUNE, 2019</h4>
             <h1 class="blog-title pl-4">Lorem Ipsum Dolor Sit Amet</h1>
         </div>
-    </div>
-    <div class="container-fluid mt-5 main-container">
+    </div> -->
+    <div class="container-fluid main-container">
         <div class="row no-gutters">
             <div class="col-xl-1" style="position: sticky;">
                 <div class="share-icons-container pl-2">
@@ -154,6 +154,11 @@
                 </div>
             </div>
             <div class="col-xl-8">
+                    <div id="top-content">
+                        <h4 class="pt-3" style="font-family: 'Raleway', sans-serif;">18 JUNE, 2019</h4>
+                        <h1>LOREM IPSUM DOLOR, SIT AMET</h1>
+                        <img src="https://images.wallpaperscraft.com/image/deck_finance_hand_credit_cards_blue_background_80324_1280x720.jpg" alt="" class="img-fluid py-5">
+                    </div>
                 <div class="content">
                     <h1>
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
@@ -257,7 +262,38 @@
                             <br>
                         </div>
                     </div>
-                    <div class="container-fluid">
+                    <div class="container-fluid px-0 pt-4">
+                        <div class="row">
+                            <div class="col-4">
+                                
+                                        <h5>Written By:</h5>
+                                        <div style="display: flex; justify-content: left; align-items: center;">
+                                            <img src="user-icon.png" width="70" alt="">
+                                            <h4 class="pl-2" style="display: inline;">Lorem Ipsum</h4>
+                                        </div>
+
+                            </div>
+                            <div class="col-4">
+                                <h5>Graphics By:</h5>
+                                
+                                    <div style="display: flex; justify-content: left; align-items: center;">
+                                        <img src="user-icon.png" width="70" alt="">
+                                        <h4 class="pl-2" style="display: inline;">Lorem Ipsum</h4>
+                                    </div>
+                                
+                            </div>
+                            <div class="col-4">
+                                <h5>Edited By:</h5>
+                                
+                                    <div style="display: flex; justify-content: left; align-items: center;">
+                                        <img src="user-icon.png" width="70" alt="">
+                                        <h4 class="pl-2" style="display: inline;">Lorem Ipsum</h4>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container-fluid">
                         <div class="row mt-5">
                             <div class="col-6 outer pl-0 pr-1">
                                 <div class="name-wrapper">
@@ -300,7 +336,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -345,7 +381,7 @@
         document.querySelector('.share-icons-container').style.top = (window.innerHeight) / 2 - 200 + 'px';
 
         //To make sticky share icons visible only after a fixed amount of scroll
-        var topScroll = document.querySelector('.image-header').offsetHeight;
+        var topScroll = document.querySelector('#top-content').offsetHeight;
         var bottomScroll = document.querySelector('.content').offsetHeight;
         window.addEventListener('scroll', function () {
             var scrollLength = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
