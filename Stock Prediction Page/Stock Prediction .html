@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock Prediction</title>
+	         <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="stripes.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<style>
+		body{
+			scroll-behavior: smooth;
+			background-color: #2f2f2f;
+		}
+.text {
+  position: relative;
+  text-align: center;
+  color: white;
+  float: left;
+  margin:10px;
+  margin-left: 17px;
+}
+.text>img{
+	filter: sepia(50%);
+}
+
+.stockname {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  font-size: 2rem;
+}
+.entryprice1{
+  position: absolute;
+  top: 70px;
+  left: 16px;
+  font-size: 1.5rem;
+  display: block;
+}
+.entryprice2{
+  position: absolute;
+  top: 110px;
+  left: 16px;
+  font-size: 1.5rem;
+  display: block;
+}
+.exitprice1{
+  position: absolute;
+  top: 70px;
+  left: 265px;
+  font-size: 1.5rem;
+  display: block;
+}
+.exitprice2{
+  position: absolute;
+  top: 110px;
+  left: 265px;
+  font-size: 1.5rem;
+  display: block;
+}
+.stoploss1{
+  position: absolute;
+  top: 170px;
+  left: 22px;
+  font-size: 1.5rem;
+  display: block;
+}
+.stoploss2{
+	  position: absolute;
+  top: 170px;
+  left: 265px;
+  font-size: 1.5rem;
+  display: block;
+}
+.text>img:hover{
+	filter:sepia(0%);
+}
+.jumbotron{
+	background-color: #0f0f0f;
+	color:white;
+}
+@media only screen and (max-width: 300px){
+	.text>img{
+		width:280px;
+	}
+}
+/*@media only screen and (max-width: 500px){
+.text, .stockname, .entryprice1, .entryprice2, .exitprice1, .exitprice2, .stoploss, .text>img{
+	width: 100%;
+	float: left;
+}*/
+} 
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="jumbotron jumbotron-fluid" id="stockprediction">
+<div class="container">
+	<h1>Stock prediction</h1>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg nav-pills bg-dark navbar-dark sticky-top" style="margin-top: -30px;">
+<ul class="navbar-nav">
+		<li class="nav-item" style="padding-left: 20px;">
+			<a href="#categorymenu" class="nav-link">Category XYZ</a>
+		</li>
+		<li class="nav-item text-muted" style="padding-left: 20px;">
+			<a href="#category1" class="nav-link">Category 1</a>
+		</li>
+		<li class="nav-item text-muted" style="padding-left: 20px;">
+			<a href="#" class="nav-link">Category 2</a>
+		</li>
+		<li class="nav-item text-muted" style="padding-left: 20px;">
+			<a href="#" class="nav-link">Category 3</a>
+		</li>
+		<li class="nav-item text-muted" style="padding-left: 20px;">
+			<a href="#" class="nav-link">Category 4</a>
+		</li>
+		<li class="nav-item text-muted" style="padding-left: 20px;">
+			<a href="#" class="nav-link">Category 5</a>
+		</li>
+</ul>
+</nav>
+
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid" id="categorymenu" style="clear: left;">
+<div class="container" style="clear: left;">
+	<h1>Category XYZ</h1>
+</div>
+</div>
+
+<!-- CHANGE THE ALT TEXT IN THE IMAGES-->
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid" id="category1" style="clear: left;">
+<div class="container" style="clear: left;">
+  <h1>Category 1</h1>
+</div>
+</div>
+
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 9.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+<div class="text">
+  <img src="Asset 8.png" alt="Snow" style="width:477px; float:left;">
+  <div class="stockname">Yes Bank</div>
+  <div class="entryprice1">Entry Price 1: 103.58</div>
+  <div class="entryprice2">Entry Price 2: 103.58</div>
+  <div class="exitprice1">Exit Price 1: 103.58</div>
+  <div class="exitprice2">Exit Price 2: 103.58</div>
+  <div class="stoploss1">Stop Loss1: 103.58</div>
+  <div class="stoploss2">Stop Loss2: 103.58</div>
+</div>
+
+<div style=" clear: left; height:100px;"><pre>
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+
+</body>
+</html>
