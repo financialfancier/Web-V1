@@ -11,7 +11,92 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="footer.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-image: url('business.jpg');
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Barlow Condensed', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.container {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            flex-shrink: 0;
+        }
+
+        /* img.social-icons {
+            width: 50px;
+        } */
+
+        i.icons {
+            font-size: 35px;
+        }
+
+        div.icon-container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        *:focus {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        /* .newsletter-container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        } */
+
+        div.footer-level-1-wrapper {
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid white;
+            text-align: left;
+        }
+
+        span.level-1-font-span {
+            font-size: 35px;
+            background-color: black;
+            padding: 0 10px;
+            color: white;
+            margin-left: 30px;
+        }
+
+        span.level-1-icon-span {
+            background-color: black;
+            float: right;
+            margin-top: 12px;
+            margin-right: 30px;
+            color: #38B64A !important;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        a.nav-links {
+            font-size: 17px;
+            font-weight: 700;
+            transition-duration: 0.2s; 
+        }
+
+        a.nav-links:hover {
+            color: rgba(255, 255, 255, 0.671) !important;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -52,98 +137,74 @@
             </div>
         </div>
     </div>
-    
-    <div class="footer-top">
-       
-    <div class="container">
-       
-      <div class="row">  
-        <h3>Follow Us On :</h3>   
-        <div class="container">
-            <img src="logo.png" class="image7"> 
-        <img src="Asset 25.png" class="image1">
-        <img src="Asset 26.png" class="image2">
-        <img src="Asset 27.png" class="image3">
-        <img src="Asset 28.png" class="image4">
-        </div>
-        </div>
-      </div> 
-        </div>
-        </div>
-
-   
     <footer style="background-color: black;" class="text-muted">
-    <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="footer-pad">
-                <h4>All Links</h4>
-                  <button type="button" class="btn btn-dark">Home</button>
-                  <button type="button" class="btn btn-dark" id="about">About Us</button>
-                  <button type="button" class="btn btn-dark" id="blog">Blogs</button>
-                  <button type="button" class="btn btn-dark" id="mark">Market Updates</button>
-                  <button type="button" class="btn btn-dark" id="eco">Economic Editorials</button>
-                  <button type="button" class="btn btn-dark" id="fp">Financial Planning</button>
-                  <button type="button" class="btn btn-dark" id="tm">Tax Management</button>
-                  <button type="button" class="btn btn-dark" id="car">Careers</button>
-                  <button type="button" class="btn btn-dark" id="privacy">Privacy Policy</button>
-                  <button type="button" class="btn btn-dark" id="contactus">Contact</button>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <!--Column1-->
-              <div class="footer-pad" id="con">
-                <h4>Contact Us :</h4>
-                <form class="list-unstyled">
-                    <label for="exampleInputEmail1">Name :</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleInputEmail1">Email id :</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      
-                      <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Your message :</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-        
-                    <button type="submit" class="btn btn-danger">Send Your Message</button> 
-                </form>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-          
-              <div class="footer-pad">
-                  
-                <form class="form-inline">
-                    <h4 class="h4" id="subs">Subscribe to our newsletter</h4>  
-                <input class="form-control mr-sm-2" id="search" type="search" aria-label="Search">
-                <img src="Asset 20.png" class="image5">
-                </form>
-              </div>
-              <div class="footer-pad">
-                <form class="form-inline">
-                    <h4 class="h4" id="search">Search this blog</h4>
-                  <input class="form-control mr-sm-2" id="search1" type="search" aria-label="Search">
-                  <img src="Asset 23.png" class="image6">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="container">
+        <div class="container-fluid">
             <div class="row">
-              <div class="col-xs-12">
-                <p class="text-xs-center" id="p">&copy; Copyright- Financial Fancier 2019</p>
-              </div>
+                <div class="col-12">
+                    <div class="footer-level-1-wrapper">
+                        <span class="level-1-font-span">
+                            Let's Connect
+                            <!--Padding is optional-->
+                        </span>
+                        <span class="level-1-icon-span">
+                            <a href="https://www.facebook.com/financialfancier"><i class="icons ml-1 fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/financialfancier/"><i class="icons ml-4 fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/Financialfancer"><i class="icons ml-4 fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/financialfancier/"><i class="icons ml-4 fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="icons ml-4 mr-1 fas fa-envelope"></i></a>
+                            <!-- <a href="https://www.facebook.com/financialfancier"><img class="social-icons" src="facebook.svg" alt=""></a>
+                            <a href="https://www.instagram.com/financialfancier/"><img class="social-icons" src="instagram.svg" alt=""></a>
+                            <a href="https://twitter.com/Financialfancer"><img class="social-icons" src="twitter.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/company/financialfancier/"><img class="social-icons" src="linkedin.svg" alt=""></a>
+                            <a href=""><img class="social-icons" src="mail.svg" alt=""></a> -->
+                        </span>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="row my-4">
+                <div class="d-none d-sm-block col-4">
+                    <img class="ml-3" src="n-logo.png" width="250" alt="">
+                </div>
+                <div class="d-none d-sm-none d-md-block pl-md-4 pl-lg-0 col-2 text-muted">
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Home</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Financial Literacy</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Market Updates</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Stock Review</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Economic Editorial</a><br>
+                </div>
+                <div class="d-none d-sm-none d-md-block col-2">
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Forum</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Stock Alerts</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Reports</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> About</a><br>
+                    <a class="nav-links text-muted" href="#"><i class="fas fa-angle-right"></i> Contact Us</a><br>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 offset-md-0 col-sm-7 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Signup for our Newsletter!</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="newsletter-container col-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-0 bg-dark border border-dark text-light">
+                                <span class="input-group-btn">
+                                    <button style="border-left: solid 1px black" class="btn btn-dark rounded-0"
+                                        type="button">Submit</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="color: black; font-weight: 900;" class="row bg-success">
+                <div class="col-12">
+                    <h6 class="mb-0">Copyright © 2019 Financialfancier - All Rights Reserved</h6>
+                </div>
+            </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
